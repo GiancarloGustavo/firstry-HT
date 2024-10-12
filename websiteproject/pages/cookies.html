@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cookies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   <title>Cookies | Voir comment nous utilisons les cookies que nous récoltons</title>
+</head>
+<body>
+     <!-- -------header's element--------- -->
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><span>H</span>art-M</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="../pages/categories.html">Catégories</a></li>
+                    <li><a href="../pages/about-us.html">À propos</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="inscription">
+                <a href="../pages/loginin.html">Se connecter</a>
+                <a href="../pages/signin.html">S'inscrire</a>
+            </div>
+            <div class="burgermenu-button">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+        </div>
+
+        <div class="burgermenu">
+            <ul class="links-burgermenu">
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="../pages/categories.html">Catégories</a></li>
+                <li><a href="../pages/about-us.html">À propos</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <div class="divider"></div>
+                <div class="inscription-burgermenu">
+                    <a href="../pages/loginin.html">Se connecter</a>
+                    <a href="../pages/signin.html">S'inscrire</a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <!-- -------main's element------- -->
+
+    <main>
+       
+        <h3>Cookies</h3>
+        <div>
+            <p>
+                Nous utilisons des cookies pour améliorer votre expérience sur notre site web. Les cookies sont de petits fichiers texte qui sont stockés sur votre ordinateur lorsque vous visitez un site web. Ils nous permettent de reconnaître votre navigateur et de collecter des informations sur votre utilisation de notre site, telles que les pages que vous visitez le plus souvent. Ces informations sont utilisées pour personnaliser votre expérience, améliorer notre site web et vous fournir des publicités plus pertinentes. Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. Veuillez noter que le blocage de certains types de cookies peut affecter votre expérience sur notre site.
+                <br />
+                Nous utilisons différents types de cookies sur notre site web. Les cookies strictement nécessaires sont indispensables au fonctionnement de notre site. Les cookies de performance collectent des données anonymes sur la façon dont vous utilisez notre site afin d'améliorer son contenu et sa navigation. Les cookies de fonctionnalité nous permettent de mémoriser vos préférences (par exemple, votre langue préférée) pour vous offrir une expérience personnalisée. Enfin, les cookies de ciblage sont utilisés pour vous présenter des publicités pertinentes en fonction de vos centres d'intérêt. Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. Veuillez noter que le blocage de certains types de cookies peut limiter votre expérience sur notre site.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- --------footer's element----------- -->
+
+    <footer>
+        <div class="footer">
+            <div class="relashionship">
+                <ul>
+                    <li><a href="../partenaires/partners.html">Nos partenaires</a></li>
+                    <li><a href="../pages/cookies.html">Nos Cookies</a></li>
+                </ul>
+            </div>
+            <div class="links-footer">
+                <ul>
+                    <li><a href="../pages/about-us.html">À propos</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <ul>
+                    <li> <a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+       <p class="copyright"> &#169 copyright Hart-M| Tous droits réservés</p>
+    </footer>
+
+    <script>
+
+
+        const burgermenubouton = document.querySelector('.burgermenu-button')
+        const burgermenuboutonIcon = document.querySelector('.burgermenu-button i')
+        const burgermenu = document.querySelector('.burgermenu')
+
+        burgermenubouton.onclick = function(){
+            burgermenu.classList.toggle('open')
+            const isOpen = burgermenu.classList.contains('open')
+            burgermenuboutonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+
+
+    </script>
+</body>
+</html>

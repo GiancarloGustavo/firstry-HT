@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/categories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   <title>Catégories | choissez celle que vous aimez</title>
+</head>
+<body>
+     <!-- -------header's element--------- -->
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><span>H</span>art-M</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="categories.html">Catégories</a></li>
+                    <li><a href="../pages/about-us.html">À propos</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="inscription">
+                <a href="../pages/loginin.html">Se connecter</a>
+                <a href="../pages/signin.html">S'inscrire</a>
+            </div>
+            <div class="burgermenu-button">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+        </div>
+
+        <div class="burgermenu">
+            <ul class="links-burgermenu">
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="../pages/categories.html">Catégories</a></li>
+                <li><a href="../pages/about-us.html">À propos</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <div class="divider"></div>
+                <div class="inscription-burgermenu">
+                    <a href="../pages/loginin.html">Se connecter</a>
+                    <a href="../pages/signin.html">S'inscrire</a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <!-- -------main's element------- -->
+
+    <main>
+        <section class="Art" id="top">
+            <div class="titre-art">
+               <h2>Visiter nos oeuvres içi: <a href="../pages/art.html">ART</a></h2>
+            </div>
+            <div class="section-1">
+                <div class="image">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="about-image">
+                 <p id="art">
+                    Apportez une touche d'art dans votre vie. Nos œuvres sont des pièces uniques qui sublimeront votre intérieur et vous accompagneront au quotidien.
+                    Laissez-vous séduire par la beauté des détails et la richesse des techniques utilisées.
+                 </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech">
+            <div class="titre-tech">
+                <h2>Nouvelles Technologies içi: <a href="../pages/tech.html">TECH</a></h2>
+            </div>
+            <div class="section-2">
+                <div class="image-2">
+                  
+                </div>
+                <div class="about-image-tech">
+                    <p id="tech">
+                        Une expérience utilisateur fluide grâce à nos dernières Technologies web. Des performances optimiséses pour une navigation ultra-rapide sur tous les 
+                        appareils. Une sécurité de pointe pour protéger tes données à chaque instant.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <div class="titre-education">
+                <h2>Nouvelles sur l'éducation à travers le monde içi: <a href="../pages/education.html">Éducation</a></h2>
+            </div>
+            <div class="section-3">
+                <div class="image-3">
+                    <img src="" alt="">
+                </div>
+                <div class="about-image-education">
+                    <p id="education">
+                        Une vision globale de l'éducation: explore les dernières tendances et enjeux mondiaux. Plonge au coeur des systèmes éducatifs nationaux et internationaux: 
+                        comparaisons, analyses et perspectives. Des ressources pédagogiques variées pour tous les niveaux d'études et tous les ages.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <div class="largeur">
+            <div class="top">
+               <p><a href="#top">Haut de la page</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- --------footer's element----------- -->
+
+    <footer>
+        <div class="footer">
+            <div class="relashionship">
+                <ul>
+                    <li><a href="../partenaires/partners.html">Nos partenaires</a></li>
+                    <li><a href="../pages/cookies.html">Nos Cookies</a></li>
+                </ul>
+            </div>
+            <div class="links-footer">
+                <ul>
+                    <li><a href="../pages/about-us.html">À propos</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <ul>
+                    <li> <a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+       <p class="copyright"> &#169 copyright Hart-M| Tous droits réservés</p>
+    </footer>
+
+    <script>
+        const burgermenubouton = document.querySelector('.burgermenu-button')
+        const burgermenuboutonIcon = document.querySelector('.burgermenu-button i')
+        const burgermenu = document.querySelector('.burgermenu')
+
+        burgermenubouton.onclick = function(){
+            burgermenu.classList.toggle('open')
+            const isOpen = burgermenu.classList.contains('open')
+            burgermenuboutonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
