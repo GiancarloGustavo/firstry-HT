@@ -12,6 +12,14 @@ body{
     width: 100%;
 }
 
+.fa-square-instagram{
+    color: white;
+}
+
+.fa-x-twitter{
+  color: white;
+}
+
 
 legend{
     text-align: center;

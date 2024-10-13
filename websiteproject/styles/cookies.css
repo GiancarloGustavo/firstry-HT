@@ -6,6 +6,14 @@
     
 }
 
+.fa-square-instagram{
+    color: white;
+}
+
+.fa-x-twitter{
+  color: white;
+}
+
 body{
     display: grid;
     grid-template-rows: 80px 3fr 1fr;
