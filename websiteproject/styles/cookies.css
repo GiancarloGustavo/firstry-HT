@@ -164,6 +164,8 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #242f1c;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .relashionship ul{
