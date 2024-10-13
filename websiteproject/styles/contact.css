@@ -130,6 +130,9 @@ span{
     margin-right: 250px; */
     margin-top: 60px;
     height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
 }
 
 label{
@@ -169,7 +172,7 @@ fieldset{
 
 
 footer{
-   height: 175px;
+   /* height: 175px; */
    width: 100%;
    background-color: #1b2a29;
 }
