@@ -12,14 +12,6 @@ body{
     width: 100%;
 }
 
-.fa-square-instagram{
-    color: white;
-}
-
-.fa-x-twitter{
-  color: white;
-}
-
 
 /* -------main---------- */
 
@@ -27,37 +19,56 @@ main{
     background-color: rgba(0, 0, 0, 0.349);
 }
 
-
-h2{
-    text-align: center;
-    margin-top: 20px;
+#sinscrire{
+    color: white;
 }
 
-legend{
-    text-align: center;
-    margin-top: 20px;
+.connection{
+    margin-top:10%;
+    margin-bottom: 10%;
 }
-/* 
-fieldset{
-    text-align: center;
-    padding: 10px auto;
-} */
+.divider1{
+    height: 1px;
+    background-color: white;
+    width: 98%;
+    margin-top: 9px;
+    margin-bottom: 3px;
+}
+
+
+.connection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 .enter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 25px;
+    background-color: gray;
+    padding:30px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.452);
 }
 
-.enter fieldset{
-    padding: 14px 10px;
-}
+
 
 input{
     padding: 5px 14px;
     margin-bottom: 6px;
+    border-radius: 12px;
 }
 
+.Envoyer{
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
 
 /* ----------header----------- */
 header{
@@ -160,7 +171,7 @@ span{
 
 
 footer{
-   /* height: 175px; */
+  
    width: 100%;
    background-color: #1b2a29;
 }
@@ -180,6 +191,7 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #242f1c;
+    text-align: center;
 }
 
 .relashionship ul{

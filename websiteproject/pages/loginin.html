@@ -64,33 +64,19 @@
 
     <main>
        
-         <div class="connection">
-            <h2>Si vous avez déjà un compte <br />
-            Alors, connectez-vous dès maintenant.</h2>
-            <div class="enter">
-                <fieldset>
-                    <legend>
-                    Vos coordonnées:
-                    </legend>
-                    <label>
-                    Nom:    <br />
-                    <input type="text" name="name" size="30" maxlength="100" placeholder="gus">
-                    </label>
-                    <br />
-                    <label>
-                    Email:    <br />
-                    <input type="email" name="email" size="30" maxlength="100" placeholder="gus@gmail.com">
-                    </label>
-                    <br />
-                    <label>
-                    Password:<br ?>
-                    <input type="password" name="password" placeholder="mot de passe">
-                    </label>
-                    <br />
-                    <label>
-                        <input type="submit" value="Envoyer">
-                    </label>
-                </fieldset>
+        <div class="connection">
+            <div class="enter">     
+                <label for="email">Email : </label><br/>
+                    <input type="email" name="email" placeholder="gusvincente@gmail.com" required="required" id="email">
+                <br/>
+                <label for="password">Mot de passe : </label><br/>
+                    <input type="password" name="password" placeholder="mot de passe" required="required" id="password">
+                <br/>
+                <input type="submit" class="Envoyer" name="Ok" value="Envoyer" >
+                <div class="divider1">
+                </div>
+                <p>Vous n'avez pas de compte | <a href="../pages/signin.html" id="sinscrire">S'inscrire</a></p>
+           
             </div>
          </div>
 

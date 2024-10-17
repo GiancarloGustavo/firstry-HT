@@ -64,44 +64,43 @@
 
     <main>
        
+        
         <div class="signin">
             <h2>Si vous n'avez pas encore de compte, entrez vos coordonnées içi pour en créer un.</h2>
             <div class="signin-elements">
                 <form>
-                  <fieldset>
-                    <legend>Incription</legend>
-                    <label for="name">Nom<br />
-                        <input type="text" name="Nom" placeholder="gus" required="required">
+                    <label for="nom">Nom :<br />
+                        <input type="text" name="nom" placeholder="gus" required="required" id="nom">
                     </label>
                     <br />
-                    <label for="name">Prénom<br />
-                        <input type="text" name="Nom" placeholder="vincente" required="required">
+                    <label for="prénom">Prénom :<br />
+                        <input type="text" name="prénom" id="prénom" placeholder="vicente" required>
                     </label>
                     <br />
-                    <label for="date_naissance">Date de naissance:<br />
-                    <input type="date" id="date_naissance" name="date_naissance">
+                    <label for="email">Email :<br />
+                        <input type="email" name="email" placeholder="gusvincente@gmail.com" required="required" id="email">
                     </label>
                     <br />
-                    <label for="age">Âge:<br />
-                        <input type="number" id="age" name="age" min="0">
+                    <label for="password">Mot de passe :<br />
+                        <input type="password" name="password" placeholder="mot de passe" required="required" id="password">
+                    </label>
+                    <br />
+                    <label for="date_de_naissance">Date de naissance:<br />
+                    <input type="date" id="date_de_naissance" name="date_de_naissance" id="date_de_naissance" required>
+                    </label>
+                    <br />
+                    <label for="age">Âge :<br />
+                        <input type="number" id="age" name="age" min="0" max="100" required>
                      </label>
                     <br />
-                    <label>Sexe:<br />
+                    <label class="sexe">Sexe :<br />
                     <label><input type="radio" name="sexe" value="homme"> Homme</label>
                     <label><input type="radio" name="sexe" value="femme"> Femme</label>
                     <label><input type="radio" name="sexe" value="autre"> Autre</label>
                     </label>
+              
                     <br />
-                    <label for="email">Email :<br />
-                        <input type="email" name="email" placeholder="gusvincente@gmail.com" required="required">
-                    </label>
-                    <br />
-                    <label for="password">Mot de passe:<br />
-                        <input type="password" name="password" placeholder="mot de passe" required="required">
-                    </label>
-                    <br />
-                    <button type="submit">Envoyer</button>
-                 </fieldset>
+                    <input type="submit" value="Envoyer" class="Envoyer" name="Ok">
                 </form>
             </div>
         </div>

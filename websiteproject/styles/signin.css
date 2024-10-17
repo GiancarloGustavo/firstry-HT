@@ -32,6 +32,9 @@ main{
     background-color: rgba(0, 0, 0, 0.349);
 }
 
+.signin{
+    margin-bottom: 20px;
+}
 
 .signin-elements{
     display: flex;
@@ -39,19 +42,30 @@ main{
     justify-content: center;
 }
 
-.signin-elements fieldset{
-    padding: 14px 10px;
+.sexe{
+    border-bottom: 1px solid white;
 }
 
 input{
     padding: 5px 14px;
-    margin-bottom: 6px;
+    margin-bottom: 18px;
+    border-radius: 12px;
 }
 
 h2{
     text-align: center;
     padding: 10px 20px;
 }
+
+.Envoyer{
+    padding: 5px 9px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
 /* ----------header----------- */
 header{
     height: 80px;
