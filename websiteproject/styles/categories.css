@@ -610,7 +610,10 @@ footer{
         flex-direction: column;
         gap: 35px;
     }
-
+    
+    h2{
+        text-align: center;
+    }
     .relashionship a,
     .links-footer a,
     .socialmedia a{
