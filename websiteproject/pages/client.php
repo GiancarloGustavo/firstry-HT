@@ -37,8 +37,8 @@
                 </ul>
             </div>
             <div class="inscription">
-                <a href="../pages/login.php">Se connecter</a>
-                <a href="../pages/signin.html">S'inscrire</a>
+                <a href="first-ht/database/login.php">Se connecter</a>
+                <a href="first-ht/database/signin.html">S'inscrire</a>
             </div>
             <div class="burgermenu-button">
                 <i class="fa-solid fa-bars"></i>
@@ -53,8 +53,8 @@
                 <li><a href="../pages/contact.html">Contact</a></li>
                 <div class="divider"></div>
                 <div class="inscription-burgermenu">
-                    <a href="../pages/login.php">Se connecter</a>
-                    <a href="../pages/signin.html">S'inscrire</a>
+                    <a href="first-ht/database/login.php">Se connecter</a>
+                    <a href="first-ht/database/signin.html">S'inscrire</a>
                 </div>
             </ul>
         </div>
@@ -66,14 +66,14 @@
             
             <?php
 
-        $servername = "localhost";
-        $username = "root";
-        $password = "root";
+        $servername = "sql101.infinityfree.com";
+        $username = "if0_37597361";
+        $password = "ampVZ58MU1euVpK";
         $error_msg = "";  // Initialisation de la variable d'erreur
 
         try {
             // Connexion à la base de données
-            $bdd = new PDO("mysql:host=$servername;dbname=hart", $username, $password);
+            $bdd = new PDO("mysql:host=$servername;dbname=if0_37597361_hart", $username, $password);
             $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             die("Erreur de connexion : " . $e->getMessage());
@@ -91,7 +91,7 @@
                 }
         }
         else{
-            header("Location: ../pages/login.php");
+            header("Location: first-ht.rf.gd/database/login.php");
         } 
 
         ?>
