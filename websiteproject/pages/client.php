@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/loginin.css">
+    <link rel="stylesheet" href="../styles/client.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google tag (gtag.js) -->
+           <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XM4ENZEK2Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,8 +17,8 @@
 
   gtag('config', 'G-XM4ENZEK2Z');
 </script>
-   
-   <title>Se connecter | Entrez correctement vos coordonnées pour vous connecter</title>
+
+   <title>Votre espace à vous</title>
 </head>
 <body>
      <!-- -------header's element--------- -->
@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div class="inscription">
-                <a href="../pages/loginin.html">Se connecter</a>
+                <a href="../pages/login.php">Se connecter</a>
                 <a href="../pages/signin.html">S'inscrire</a>
             </div>
             <div class="burgermenu-button">
@@ -53,7 +53,7 @@
                 <li><a href="../pages/contact.html">Contact</a></li>
                 <div class="divider"></div>
                 <div class="inscription-burgermenu">
-                    <a href="../pages/loginin.html">Se connecter</a>
+                    <a href="../pages/login.php">Se connecter</a>
                     <a href="../pages/signin.html">S'inscrire</a>
                 </div>
             </ul>
@@ -63,22 +63,38 @@
     <!-- -------main's element------- -->
 
     <main>
-       
-        <div class="connection">
-            <div class="enter">     
-                <label for="email">Email : </label><br/>
-                    <input type="email" name="email" placeholder="gusvincente@gmail.com" required="required" id="email">
-                <br/>
-                <label for="password">Mot de passe : </label><br/>
-                    <input type="password" name="password" placeholder="mot de passe" required="required" id="password">
-                <br/>
-                <input type="submit" class="Envoyer" name="Ok" value="Envoyer" >
-                <div class="divider1">
-                </div>
-                <p>Vous n'avez pas de compte | <a href="../pages/signin.html" id="sinscrire">S'inscrire</a></p>
-           
-            </div>
-         </div>
+            
+            <?php
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "root";
+        $error_msg = "";  // Initialisation de la variable d'erreur
+
+        try {
+            // Connexion à la base de données
+            $bdd = new PDO("mysql:host=$servername;dbname=hart", $username, $password);
+            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die("Erreur de connexion : " . $e->getMessage());
+        }
+
+        $email = $_COOKIE['email'];
+        $token = $_COOKIE['token'];
+
+        if($token){
+                $req = $bdd->query("SELECT * FROM shenshenn WHERE email = '$email' AND token = '$token'");
+                $rep = $req->fetch();
+
+                if($rep['prénom'] =! false){
+                    echo "Vous êtes connecté ".$rep['prenom']." !";
+                }
+        }
+        else{
+            header("Location: ../pages/login.php");
+        } 
+
+        ?>
 
     </main>
 
@@ -100,8 +116,8 @@
             </div>
             <div class="socialmedia">
                 <ul>
-                    <li> <a href="https://www.instagram.com/jlh.shenn"><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
-                    <li><a href="https://www.twitter.com/ludshenn"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+                    <li> <a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
                 </ul>
             </div>
         </div>

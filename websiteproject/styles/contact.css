@@ -12,19 +12,40 @@ body{
     width: 100%;
 }
 
-.fa-square-instagram{
-    color: white;
-}
-
-.fa-x-twitter{
-  color: white;
-}
-
 
 /* -------main---------- */
 
 main{
     background-color: rgba(0, 0, 0, 0.349);
+}
+
+h3{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 200px;
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+    font-weight: 519;
+    font-size: 17px;
+}
+
+.notreemail{
+    background-color: lightslategray;
+    padding: 4px 4px;
+    border-radius: 9px;
+    transition: 0.3s ease-in-out;
+    color: rgb(49, 48, 46);
+}
+
+.notreemail:hover{
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
 }
 
 /* ----------header----------- */
@@ -123,56 +144,22 @@ span{
     border-radius: 12px;
 }
 
-.contact-principal{
+ .contact-principal{
     background-color: #825959;
     /* border-radius: 12px;
     margin-left: 250px;
     margin-right: 250px; */
     margin-top: 60px;
     height: 300px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-}
+} 
 
-label{
-    color: white;
-}
-
-p{
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 9px;
-}
-
-p a{
-    text-transform: uppercase;
-    color: #2e2525;
-}
-
-.email-me{
-     width: 100%;
-     
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-fieldset{
-    /* max-width: 300px; */
-    padding: 20px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-}
 
 
 /* ---------footer----------- */
 
 
 footer{
-   /* height: 175px; */
+   height: 175px;
    width: 100%;
    background-color: #1b2a29;
 }
