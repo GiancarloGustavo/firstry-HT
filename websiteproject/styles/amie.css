@@ -19,111 +19,33 @@ main{
     background-color: rgba(0, 0, 0, 0.349);
     
 }
-.amie{
-    text-decoration: none;
-    color: black;
+
+.tinah{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    text-align: center;
 }
 
-.h3 {
-    color: #ffffff;
-    background-color: #1b2a29;
-    text-align: center;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    border-radius: 4px;
-    padding: 4px;
+h3{
+    font-size: 2rem;
+    color: #4a3f4a;
 }
 
 p{
-    text-align: center;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    background-color: rgb(176, 180, 183);
-    padding: 10px;
+    background-color: #c8a4c8;
+    padding: 8px;
     border-radius: 5px;
-    margin-bottom: 43px;
 }
-
-.photo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    background-color:rgb(176, 180, 183) ;
-    padding: 12px;
-    border-radius: 8px;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
-    margin-bottom: 3rem;
-    overflow: auto;
-}
-
-.children{
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
-    background-image: url(../image/idriselba.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.cndl{
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
-    background-image: url(../image/voisin.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-}
-.paysage{
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
-    background-image: url(../image/father.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-}
-
-.billie{
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
-    background-image: url(../image/billieilsh.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-}
-.soeur{
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
-    background-image: url(../image/soeurx.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-}
-.haiti{
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
-    background-image: url(../image/haiti.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-}
-
 
 /* ----------header----------- */
 header{
     height: 80px;
     width: 100%;
-    background-color:#1b2a29;
+    background-color:#924c7e;
+    box-shadow: 3px 3px 80px #282626;
 }
 
 .navbar{
@@ -140,7 +62,7 @@ header{
 }
 
 .logo a:hover{
-    color: #825959;
+    color: #cdbcbc;
     font-size: 2rem;
 }
 
@@ -157,7 +79,7 @@ span:hover{
 }
 
 span{
-    color: brown;
+    color: rgb(202, 185, 185);
     font-size: 30px;
     font-weight: 800;
     transition: 0.3s ease-in-out;
@@ -222,7 +144,7 @@ span{
 footer{
    height: 175px;
    width: 100%;
-   background-color: #1b2a29;
+   background-color: #924c7e;
 }
 
 .footer{
@@ -239,7 +161,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #242f1c;
+    background-color: #924c7e;
+    box-shadow: 4px 4px 5px #ffffff;
 }
 
 .relashionship ul{
@@ -350,11 +273,11 @@ footer{
 }
 
 /* ---------responsive----------- */
-@media (min-width:600px){
+/* @media (min-width:600px){
     footer{
         height: 230px;
     }
-}
+} */
 
 @media (max-width:990px){
 
@@ -374,12 +297,10 @@ footer{
 }
 
 @media (max-width:510px){
-    header{
-        background-color: #1b2a29;
-    }
+  
     footer{
-        background-color: #1b2a29;
-        height: 400px;
+  
+        /* height: 400px; */
         width: 100%;
     }
     .footer{
