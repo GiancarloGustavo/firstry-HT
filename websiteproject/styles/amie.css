@@ -27,6 +27,7 @@ main{
     margin-right: 3rem;
     margin-left: 3rem;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 h3{
@@ -300,7 +301,7 @@ footer{
   
     footer{
   
-        /* height: 400px; */
+        height: 400px;
         width: 100%;
     }
     .footer{
@@ -312,7 +313,7 @@ footer{
     .relashionship a,
     .links-footer a,
     .socialmedia a{
-        color: #825959;
+        color: #fff;
     }
 
     .burgermenu{
