@@ -1,0 +1,267 @@
+
+.police{
+    font-family: "Futura", cursive;
+    font-weight:730;
+    /* font-style: 30px; */
+    text-decoration: none;
+    color: black;
+}
+
+.logo a{
+    font-size: 24px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width:100%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin-left: 1.2rem;
+}
+
+.like-message{
+    margin-right: 1.2rem;
+}
+
+.foto1{
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    float: left;
+    background-color: rgb(199, 237, 29);
+}
+
+.foto2{
+    background-image: url(téléchargement.jpg);
+    background-size: cover;
+    background-position: center;
+     width: 58px;
+     height: 58px;
+     border-radius: 100%;
+     float: left;
+}
+
+.foto{
+  background-image: url(téléchargement.webp);
+  background-size: cover;
+  background-position: center;
+   width: 58px;
+   height: 58px;
+   border-radius: 100%;
+   float: left;
+
+
+}
+
+.container{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    position:fixed;
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+}
+
+.like-message{
+  display: flex;
+  gap:13px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:95%;
+    height: 75px;
+    background-color: #fff;
+    top: 55px;
+    margin-left: 1.3rem;
+    overflow-x: hidden;
+    gap: 4px;
+}
+
+nav{
+    overflow: hidden;
+}
+
+/* -------------------i------------------ */
+
+.fa-heart{
+    font-size: 20px;
+}
+
+.fa-facebook-messenger{
+    font-size: 20px;
+}
+
+.fa-house{
+    font-size: 20px;
+ 
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+}
+.fa-square-plus{
+    font-size: 20px;
+}
+.fa-film{
+    font-size: 20px;
+}
+
+.fa-ellipsis-vertical{
+    font-size:15px ;
+    margin-right: 1.2rem;
+}
+
+/* --------footer--------- */
+
+.home-search-add-reels{
+ display: flex;
+ justify-content: space-around;
+ padding: 13px;
+}
+
+.my-account-foto-footer{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    float: left;
+    background-color: rgb(199, 237, 29);
+}
+
+/* -------main---------- */
+
+main{
+    overflow: hidden;
+}
+
+.compte-user{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    top: 120px;
+    height: 32px;
+}
+
+.profil-users{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    float: left;
+    background-image: url(téléchargement.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 1.4rem;
+   
+}
+
+.camavinga{
+    display: flex;
+    flex-grow: 2;
+    margin-top: 2px;
+    padding: 3px;
+}
+
+.hart{
+    width: 100%;
+    height: 700px;
+    /* background-color: black; */
+}
+
+.foto-user{
+    width: 100%;
+    background-image: url(camavinga.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    width: 100%;
+}
+
+.like-comments-share-save{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 8px;
+}
+
+.divider{
+    width: 170px;
+}
+
+.chiffre{
+  font-size: 13px;
+}
+
+.foto-followers{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    float: left;
+    background-image:url(téléchargement.webp) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left:0.7rem;
+}
+
+.bas-de-page{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+    gap: 4px;
+}
+
+.ombre{
+    color: lightgray;
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
+}
+
+.foto-follower{
+    display: flex;
+   
+}
+
+.description-user{
+    margin-left: 0.7rem;
+}
+
+.my-account{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 100%;
+
+}
+
+.my-account-foto{
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    float: left;
+    background-color: rgb(199, 237, 29);
+}
